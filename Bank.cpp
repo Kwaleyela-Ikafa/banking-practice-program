@@ -65,3 +65,23 @@ double deposit(){
     }
 
 }
+
+double withdraw(double balance){
+    double amount = 0;
+
+    cout << "Enter withdraw amount: ";
+    cin >> amount;
+
+    if(amount > balance) {
+        cout <<  "Insufficient funds" << endl;
+        return 0;
+    }
+    else if(amount < 0) {
+        cout << "Thats not a valid amount" << endl;
+        return 0;
+    }
+    else {
+        return amount;
+    }
+     
+}
