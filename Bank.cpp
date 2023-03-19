@@ -47,3 +47,6 @@ int main()
     
 }
 
+void showBalance(double balance){
+    cout << "Your balance is: $" << setprecision(2) << fixed << balance << endl;
+}
