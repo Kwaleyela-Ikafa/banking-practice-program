@@ -50,3 +50,18 @@ int main()
 void showBalance(double balance){
     cout << "Your balance is: $" << setprecision(2) << fixed << balance << endl;
 }
+
+double deposit(){
+    double amount = 0;
+
+    cout << "Enter deposit amount: ";
+    cin >> amount;
+
+    if(amount > 0) {
+        return amount;
+    }else {
+        cout << "Enter a valid amount" << endl;
+        return 0;
+    }
+
+}
